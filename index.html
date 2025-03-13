@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Mortage - Calculator</title>
+</head>
+<body>
+    <main>
+        <form action="" class="mortage-calculator">
+            <div class="mortage-header">
+                <p class="title">Mortage Calculator</p>
+                <p class="clear-all">Clear All</p>
+            </div>
+            <div class="calculations-input">
+                <div class="amount-input-wrapper">
+                    <label for="amount">
+                        <p id="amount" class="mortage-titles global-titles">Mortage Amount</p>
+                        <div class="global-input-wrapper"><span class="span-input">£</span><input type="number" id="amount" class="global-style-input mortage-amount-input"></div>
+                    </label>
+                </div>
+                <div class="term-and-interest-wrapper">
+                    <label for="term" class="term">
+                        <p class="mortage-titles global-titles">Mortgage Term</p>
+                        <div class="global-input-wrapper">
+                            <input class="mortage-term-input" type="number">
+                            <span class="span-input">years</span>
+                        </div>
+                    </label>
+                    <label for="interest">
+                        <p class="global-titles mortage-titles">Interest Rate</p>
+                        <div class="global-input-wrapper">
+                            <input type="number">
+                            <span class="span-input interest-rate-input">%</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="mortage-type">
+                    <p class="mortage-titles global-titles">Mortage Type</p>
+                    <label for="type" class="type">
+                        <div class="radio-inputs space-input">
+                            <input type="radio" class="global-style-input radio-inputs" id="repayment" name="choice">
+                            <label for="repayment" class="input-width label-spacer">Repayment</label>
+                        </div>
+                        <div class="radio-inputs">
+                            <input type="radio" class="global-style-input radio-inputs" id="interest-only" name="choice">
+                            <label  for="interest-only" class="input-width label-spacer">Interest Only</label>
+                        </div>
+                    </label>
+                </div>
+                <input class="submit" type="submit" value="Calculate Repayments">
+            </div>
+        </form>
+        <div class="results-wrapper">
+                <div class="no-results-content">
+                <div class="no-results-image">
+                    <img src="./img/Layer_1.svg" alt="">
+                </div>
+                <p class="no-results-title">Results shown here</p>
+                <p class="no-results-text">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+            </div>
+            <div class="hidden">
+            <div class="results">
+                <p class="results-title">Your results</p>
+                <p class="results-paragraph">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+            </div>
+            <div class="results-data">
+                <div class="monthly-repayment-results">
+                    <p class="your-monthly-repayment">Your monthly repayments</p>
+                    <p class="total-monthly"> £1,797.74</p>
+                </div>
+                <hr class="border-bottom">
+                <div class="total-youll-repay">
+                    <p class="total-overterm your-monthly-repayment">Total you'll repay over the term</p>
+                    <p class="total-overterm-pounds">£539,322.94</p>
+                </div>
+            </div>
+        </div>
+            </div>
+
+    </main>
+    <!-- <link rel="stylesheet" href="./js/app.js"> -->
+     <script src="./js/app.js"></script>
+</body>
+</html>
